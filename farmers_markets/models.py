@@ -200,6 +200,7 @@ class Users(models.Model):
     lname = models.CharField(blank=True, null=True)
     username = models.CharField()
     password_hash = models.CharField()
+    salt = models.CharField(blank=True, null=True)
 
     class Meta:
         managed = False
