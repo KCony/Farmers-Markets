@@ -30,6 +30,7 @@ def index(request):
 class MarketsListView(generic.ListView):
     model = Markets
     paginate_by = 20
+    ordering = ['market_id']
 
 
 class MarketsDetailView(generic.DetailView):
